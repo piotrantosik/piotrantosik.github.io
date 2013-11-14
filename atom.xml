@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Piotr Antosik - Blog]]></title>
   <link href="http://piotrantosik.github.io/atom.xml" rel="self"/>
   <link href="http://piotrantosik.github.io/"/>
-  <updated>2013-11-14T20:43:23+01:00</updated>
+  <updated>2013-11-14T21:16:13+01:00</updated>
   <id>http://piotrantosik.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Piotr Antosik]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Testowy wpis]]></title>
+    <link href="http://piotrantosik.github.io/blog/2013/11/14/testowy-wpis/"/>
+    <updated>2013-11-14T21:15:00+01:00</updated>
+    <id>http://piotrantosik.github.io/blog/2013/11/14/testowy-wpis</id>
+    <content type="html"><![CDATA[<p>Wpis testowy <i class='emoji smile'></i>.</p>
+]]></content>
+  </entry>
   
 </feed>
