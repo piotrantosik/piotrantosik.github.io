@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Piotr Antosik - Blog]]></title>
-  <link href="http://piotrantosik.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Linux | Piotr Antosik - Blog]]></title>
+  <link href="http://piotrantosik.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://piotrantosik.github.io/"/>
   <updated>2013-11-14T23:01:08+01:00</updated>
   <id>http://piotrantosik.github.io/</id>
@@ -18,14 +18,11 @@
     <link href="http://piotrantosik.github.io/blog/2013/11/14/create-an-iso-in-linux-using-dd/"/>
     <updated>2013-11-14T22:35:00+01:00</updated>
     <id>http://piotrantosik.github.io/blog/2013/11/14/create-an-iso-in-linux-using-dd</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s simple:</p>
-
-<figure class='code panel panel-default'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+    <content type="html"><![CDATA[<p>It&rsquo;s simple:
+<div class='bogus-wrapper'><notextile><figure class='code panel panel-default'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>dd <span class="k">if</span><span class="o">=</span>/dev/cdrom <span class="nv">of</span><span class="o">=</span>~/iso_image.iso
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Voilà!</p>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+Voilà!</p>
 ]]></content>
   </entry>
   
