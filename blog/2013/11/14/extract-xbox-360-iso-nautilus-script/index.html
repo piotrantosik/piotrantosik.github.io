@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>About Me - Piotr Antosik - Blog</title>
+  <title>Extract Xbox 360 ISO - Nautilus script - Piotr Antosik - Blog</title>
   <meta name="author" content="Piotr Antosik">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://piotrantosik.com/about-me">
+  <link rel="canonical" href="http://piotrantosik.com/blog/2013/11/14/extract-xbox-360-iso-nautilus-script">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Piotr Antosik - Blog" type="application/atom+xml">
 
@@ -46,13 +46,13 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li >
+                <li class="active">
                     <a href="/">Blog</a>
                 </li>
                 <li >
                     <a href="/blog/archives">Archives</a>
                 </li>
-                <li class="active">
+                <li >
                 <a href="/about-me">About Me</a>
                 </li>
             </ul>
@@ -83,63 +83,127 @@
         <div id="content">
           <div class="row">
   <div class="page-content col-md-9">
-    <article role="article">
+    <article class="hentry" role="article">
       
-        <header class="page-header">
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-14T22:47:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2013</time>
+        
+      </p>
+    
+    
+    <h1 class="entry-title">
+        Extract Xbox 360 ISO - Nautilus Script
+        
+    </h1>
+    
+  </header>
+
+
+<div class="entry-content clearfix"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tar zxvf extract-xiso_v2.7_src_110930_by_somski.tar.gz
+</span><span class='line'>cd extract-xiso
+</span><span class='line'>make extract-xiso
+</span><span class='line'>sudo chmod +x extract-xiso
+</span><span class='line'>chmod +x extract-xiso
+</span><span class='line'>./extract-xiso
+</span><span class='line'>sudo cp extract-xiso /bin
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>/home/piotr/.local/share/nautilus/scripts
+</span><span class='line'>
+</span><span class='line'>nowy plik: Wypakuj obraz X360
+</span><span class='line'>
+</span><span class='line'>chmod +x
+</span><span class='line'>
+</span><span class='line'>zawartosc:
+</span><span class='line'>
+</span><span class='line'>#!/bin/bash
+</span><span class='line'>
+</span><span class='line'>IFS=$'\n'
+</span><span class='line'>for file in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS
+</span><span class='line'>do
+</span><span class='line'>gnome-terminal -x extract-xiso -x $file
+</span><span class='line'>done</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+      <footer>
+        <p class="meta text-muted">
           
-            <p class="meta text-muted text-uppercase">
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-14T22:19:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2013</time></p>
-          
-          
-            <h1 class="entry-title">
-              About Me
-              
-            </h1>
-          
-        </header>
-      
-      <div class="entry-content">
-        <p>Hi!</p>
-
-<p>I&rsquo;m Piotr!</p>
-
-      </div>
-      
-        <footer>
-          <p class="meta text-muted">
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-14T22:19:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2013</time>
-            
-          </p>
-          
-            <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://piotrantosik.com/about-me/index.html" data-via="piotrantosik" data-counturl="http://piotrantosik.com/about-me/index.html" >Tweet</a>
+
+<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard">Posted by <span class="fn">Piotr Antosik</span></span>
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-14T22:47:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2013</time>
+          
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category label label-primary' href='/blog/categories/linux/'>Linux</a> <a class='category label label-primary' href='/blog/categories/ubuntu/'>Ubuntu</a>
+  
+</span>
+
+
+        </p>
+        
+          <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://piotrantosik.com/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/" data-via="piotrantosik" data-counturl="http://piotrantosik.com/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -149,9 +213,16 @@
   
 </div>
 
-          
-        </footer>
-      
+        
+        
+          <ul class="meta text-muted pager">
+            
+            <li class="previous"><a href="/blog/2013/11/14/create-an-iso-in-linux-using-dd/" title="Previous Post: Create an ISO in Linux using CLI">&laquo; Create an ISO in Linux using CLI</a></li>
+            
+            
+          </ul>
+        
+      </footer>
     </article>
     
       <section>
@@ -163,16 +234,16 @@
   </div>
 
   
-    <aside class="sidebar col-md-3">
-      
-        <section class="panel panel-default">
+  <aside class="sidebar col-md-3">
+    
+      <section class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Recent Posts</h3>
   </div>
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/">Extract Xbox 360 ISO - Nautilus Script</a>
+    <a class="list-group-item active" href="/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/">Extract Xbox 360 ISO - Nautilus Script</a>
     
     <a class="list-group-item " href="/blog/2013/11/14/create-an-iso-in-linux-using-dd/">Create an ISO in Linux Using CLI</a>
     
@@ -200,8 +271,8 @@
     </div>
 </section>
 
-      
-    </aside>
+    
+  </aside>
   
 </div>
 
@@ -228,8 +299,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://piotrantosik.com/about-me/index.html';
-        var disqus_url = 'http://piotrantosik.com/about-me/index.html';
+        var disqus_identifier = 'http://piotrantosik.com/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/';
+        var disqus_url = 'http://piotrantosik.com/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/';
         var disqus_script = 'embed.js';
       
     (function () {

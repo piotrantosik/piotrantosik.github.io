@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://piotrantosik.github.io/sitemap.xml 
+Sitemap: http://piotrantosik.com/sitemap.xml 
