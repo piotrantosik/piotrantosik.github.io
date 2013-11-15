@@ -27,6 +27,18 @@
 
   <script src="/javascripts/libs/jquery/jquery-2.0.3.min.js"></script>
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-974680-10']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -105,93 +117,6 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-14T22:47:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2013</time>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/">Extract Xbox 360 ISO - Nautilus Script</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>tar zxvf extract-xiso_v2.7_src_110930_by_somski.tar.gz
-</span><span class='line'>cd extract-xiso
-</span><span class='line'>make extract-xiso
-</span><span class='line'>sudo chmod +x extract-xiso
-</span><span class='line'>chmod +x extract-xiso
-</span><span class='line'>./extract-xiso
-</span><span class='line'>sudo cp extract-xiso /bin
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>/home/piotr/.local/share/nautilus/scripts
-</span><span class='line'>
-</span><span class='line'>nowy plik: Wypakuj obraz X360
-</span><span class='line'>
-</span><span class='line'>chmod +x
-</span><span class='line'>
-</span><span class='line'>zawartosc:
-</span><span class='line'>
-</span><span class='line'>#!/bin/bash
-</span><span class='line'>
-</span><span class='line'>IFS=$'\n'
-</span><span class='line'>for file in $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS
-</span><span class='line'>do
-</span><span class='line'>gnome-terminal -x extract-xiso -x $file
-</span><span class='line'>done</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-        </article>
-      
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-
-
-
-
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-14T22:35:00+01:00" pubdate data-updated="true">Nov 14<span>th</span>, 2013</time>
         
       </p>
@@ -240,8 +165,6 @@
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2013/11/14/extract-xbox-360-iso-nautilus-script/">Extract Xbox 360 ISO - Nautilus Script</a>
-    
     <a class="list-group-item " href="/blog/2013/11/14/create-an-iso-in-linux-using-dd/">Create an ISO in Linux Using CLI</a>
     
   </div>
@@ -255,14 +178,8 @@
         
         
         <a class="list-group-item " href="/blog/categories/linux/index.html">
-            <span class="badge">2</span>
-            Linux
-        </a>
-        
-        
-        <a class="list-group-item " href="/blog/categories/ubuntu/index.html">
             <span class="badge">1</span>
-            Ubuntu
+            Linux
         </a>
         
     </div>
